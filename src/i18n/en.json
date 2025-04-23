@@ -1,0 +1,64 @@
+{
+  "app": {
+    "title": "Periodic Table Explorer",
+    "subtitle": "Discover chemical elements interactively"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "search": "Search for an element..."
+  },
+  "filters": {
+    "title": "Filters",
+    "all": "All elements",
+    "metals": "Metals",
+    "nonmetals": "Non-metals",
+    "metalloids": "Metalloids",
+    "alkali_metals": "Alkali metals",
+    "alkaline_earth_metals": "Alkaline earth metals",
+    "transition_metals": "Transition metals",
+    "lanthanides": "Lanthanides",
+    "actinides": "Actinides",
+    "halogens": "Halogens",
+    "noble_gases": "Noble gases",
+    "state": "State",
+    "solid": "Solid",
+    "liquid": "Liquid",
+    "gas": "Gas"
+  },
+  "element": {
+    "atomic_number": "Atomic number",
+    "symbol": "Symbol",
+    "name": "Name",
+    "atomic_mass": "Atomic mass",
+    "electron_config": "Electron configuration",
+    "discovered_by": "Discovered by",
+    "discovery_year": "Discovery year",
+    "category": "Category",
+    "state": "State",
+    "melting_point": "Melting point",
+    "boiling_point": "Boiling point",
+    "density": "Density",
+    "uses": "Uses",
+    "fun_fact": "Fun fact",
+    "learn_more": "Learn more",
+    "close": "Close"
+  },
+  "categories": {
+    "alkali_metal": "Alkali metal",
+    "alkaline_earth": "Alkaline earth metal",
+    "transition_metal": "Transition metal",
+    "metal": "Metal",
+    "metalloid": "Metalloid",
+    "nonmetal": "Non-metal",
+    "halogen": "Halogen",
+    "noble_gas": "Noble gas",
+    "lanthanide": "Lanthanide",
+    "actinide": "Actinide"
+  },
+  "states": {
+    "solid": "Solid",
+    "liquid": "Liquid",
+    "gas": "Gas"
+  }
+} 

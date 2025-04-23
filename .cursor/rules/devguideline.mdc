@@ -1,0 +1,120 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+description: Règles de développement et conventions pour le projet Periodic Table Explorer
+alwaysApply: true
+globs:
+
+"**/*"
+
+Conventions de codage
+
+Langage & Framework
+
+Utiliser Svelte (vanilla) avec TypeScript strict (strict: true dans tsconfig.json).
+
+Styliser uniquement avec Tailwind selon tailwind.config.ts. Aucune feuille de style globale ou SCSS.
+
+Structure des fichiers
+
+Arborescence obligatoire :
+
+src/components/ : composants UI atomiques.
+
+src/features/ : groupes fonctionnels (tableau, filtres, modal…).
+
+src/stores/ : stores Svelte (currentLang, currentFilters, selectedElement).
+
+src/i18n/ : traductions (fr.json, en.json).
+
+src/data/ : elements.json (schéma ElementData).
+
+src/utils/ : helpers & utilitaires réutilisables.
+
+Ne jamais créer un composant ou utilitaire déjà existant ; préférer la ré‑utilisation.
+
+Nommage & conventions
+
+Fichiers/dossiers : kebab-case (element-card.svelte).
+
+Composants : PascalCase (ElementCard).
+
+Variables/fonctions : camelCase.
+
+Types/Interfaces : PascalCase (ElementData).
+
+SOLID & DRY
+
+SRP : un module = une responsabilité claire.
+
+Open/Closed : étendre via configuration plutôt que modifier le cœur.
+
+DRY : factoriser la logique partagée (ex. helpers de filtre dans utils/).
+
+Stores & état
+
+Un store dédié par domaine ; pas d’accès direct entre stores.
+
+Les composants réactifs lisent via $store, écrivent via méthodes du store.
+
+Tests (TDD)
+
+Stack tests : Vitest + @testing-library/svelte.
+
+Chaque composant/fonction possède un fichier test *.spec.ts couvrant :
+
+Rendu initial
+
+Interactions clés (clic, update store)
+
+Accessibilité (rôle ARIA, focus management)
+
+Animations
+
+Déclarer toutes les timelines GSAP dans src/animations/.
+
+Maximum deux animations simultanées à l’écran.
+
+Animations standard :
+
+card-flip (rotation Y 0→180°)
+
+zoom-in (scale 0.5→1, fade‑in)
+
+Toute nouvelle animation doit être factorisée et réutilisable, jamais codée inline.
+
+Accessibilité
+
+role et aria-label pertinents pour chaque élément interactif.
+
+Navigation clavier complète (Tab, Enter, Esc sur la modal).
+
+Contraste couleurs ≥ WCAG AA.
+
+Internationalisation
+
+Aucune chaîne brute dans les composants ; utiliser t('key').
+
+Garder les fichiers de langues synchronisés (scripts de lint i18n à venir).
+
+Guidelines Cursor spécifiques
+
+Toujours vérifier l’existence d’un fichier avant d’en générer un nouveau (Cmd + P).
+
+Réutiliser les types ElementData, ElementBasic.
+
+Générer les tests dans le même dossier que le composant (.spec.ts).
+
+Lorsqu’un composant est proposé :
+
+Inclure la signature TS complète des props.
+
+Fournir un exemple minimal d’usage.
+
+Ajouter les tests unitaires associés.
+
+@tailwind.config.ts
+@types/element.ts
+

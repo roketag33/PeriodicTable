@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply h-full w-full;
+}
+
+/* Styles pour les éléments du tableau périodique */
+@layer components {
+  .element-card {
+    @apply border border-gray-300 p-2 relative transition-all duration-300 hover:shadow-lg flex flex-col justify-center items-center;
+    min-height: 64px;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .element-symbol {
+    @apply text-2xl font-bold text-center mb-1;
+  }
+  
+  .element-number {
+    @apply text-xs absolute top-1 left-1 opacity-80;
+  }
+  
+  .element-name {
+    @apply text-xs text-center max-w-full overflow-hidden;
+    /* Assurer que le texte long est tronqué proprement */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    line-height: 1.2;
+  }
+  
+  /* Ajouter un effet de relief pour les éléments */
+  .element-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "app": {
+    "title": "Explorateur du Tableau Périodique",
+    "subtitle": "Découvrez les éléments chimiques de manière interactive"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "search": "Rechercher un élément..."
+  },
+  "filters": {
+    "title": "Filtres",
+    "all": "Tous les éléments",
+    "metals": "Métaux",
+    "nonmetals": "Non-métaux",
+    "metalloids": "Métalloïdes",
+    "alkali_metals": "Métaux alcalins",
+    "alkaline_earth_metals": "Métaux alcalino-terreux",
+    "transition_metals": "Métaux de transition",
+    "lanthanides": "Lanthanides",
+    "actinides": "Actinides",
+    "halogens": "Halogènes",
+    "noble_gases": "Gaz nobles",
+    "state": "État",
+    "solid": "Solide",
+    "liquid": "Liquide",
+    "gas": "Gazeux"
+  },
+  "element": {
+    "atomic_number": "Numéro atomique",
+    "symbol": "Symbole",
+    "name": "Nom",
+    "atomic_mass": "Masse atomique",
+    "electron_config": "Configuration électronique",
+    "discovered_by": "Découvert par",
+    "discovery_year": "Année de découverte",
+    "category": "Catégorie",
+    "state": "État",
+    "melting_point": "Point de fusion",
+    "boiling_point": "Point d'ébullition",
+    "density": "Densité",
+    "uses": "Utilisations",
+    "fun_fact": "Anecdote",
+    "learn_more": "En savoir plus",
+    "close": "Fermer"
+  },
+  "categories": {
+    "alkali_metal": "Métal alcalin",
+    "alkaline_earth": "Métal alcalino-terreux",
+    "transition_metal": "Métal de transition",
+    "metal": "Métal",
+    "metalloid": "Métalloïde",
+    "nonmetal": "Non-métal",
+    "halogen": "Halogène",
+    "noble_gas": "Gaz noble",
+    "lanthanide": "Lanthanide",
+    "actinide": "Actinide"
+  },
+  "states": {
+    "solid": "Solide",
+    "liquid": "Liquide",
+    "gas": "Gazeux"
+  }
+} 

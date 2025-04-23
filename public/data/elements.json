@@ -1,0 +1,194 @@
+[
+  {
+    "number": 1,
+    "symbol": "H",
+    "name_fr": "Hydrogène",
+    "name_en": "Hydrogen",
+    "category": "nonmetal",
+    "atomic_mass": 1.008,
+    "description_fr": "L'hydrogène est l'élément chimique le plus léger et le plus abondant de l'univers. Il est présent dans l'eau et dans la plupart des composés organiques.",
+    "description_en": "Hydrogen is the lightest and most abundant chemical element in the universe. It is present in water and most organic compounds.",
+    "discovery_year": 1766,
+    "discoverer": "Henry Cavendish",
+    "electron_configuration": "1s¹",
+    "electronegativity": 2.2,
+    "state_at_stp": "gas",
+    "melting_point": 13.99,
+    "boiling_point": 20.27,
+    "density": 0.00008988,
+    "uses_fr": [
+      "Production d'ammoniac et d'engrais",
+      "Raffinage du pétrole",
+      "Pile à combustible"
+    ],
+    "uses_en": [
+      "Ammonia and fertilizer production",
+      "Oil refining",
+      "Fuel cells"
+    ],
+    "fun_fact_fr": "L'hydrogène est si léger qu'il peut s'échapper de l'atmosphère terrestre vers l'espace.",
+    "fun_fact_en": "Hydrogen is so light that it can escape Earth's atmosphere into space.",
+    "technical_details_fr": "L'hydrogène possède trois isotopes naturels: protium (¹H), deuterium (²H) et tritium (³H). Le protium est le plus abondant, représentant plus de 99,98% de l'hydrogène naturel.",
+    "technical_details_en": "Hydrogen has three natural isotopes: protium (¹H), deuterium (²H), and tritium (³H). Protium is the most abundant, accounting for more than 99.98% of natural hydrogen."
+  },
+  {
+    "number": 6,
+    "symbol": "C",
+    "name_fr": "Carbone",
+    "name_en": "Carbon",
+    "category": "nonmetal",
+    "atomic_mass": 12.011,
+    "description_fr": "Le carbone est l'élément de base de la vie sur Terre. Il peut former un nombre extrêmement large de composés avec d'autres éléments.",
+    "description_en": "Carbon is the basic element of life on Earth. It can form an extremely wide range of compounds with other elements.",
+    "discovery_year": -3750,
+    "discoverer": "Civilisations anciennes",
+    "electron_configuration": "1s² 2s² 2p²",
+    "electronegativity": 2.55,
+    "state_at_stp": "solid",
+    "melting_point": 3550,
+    "boiling_point": 4027,
+    "density": 2.267,
+    "uses_fr": [
+      "Acier et autres alliages",
+      "Graphite pour crayons et lubrifiants",
+      "Diamants pour joaillerie et outils de coupe"
+    ],
+    "uses_en": [
+      "Steel and other alloys",
+      "Graphite for pencils and lubricants",
+      "Diamonds for jewelry and cutting tools"
+    ],
+    "fun_fact_fr": "Le même élément, le carbone, peut être soit l'une des substances les plus molles (graphite) soit la substance naturelle la plus dure (diamant).",
+    "fun_fact_en": "The same element, carbon, can be either one of the softest substances (graphite) or the hardest natural substance (diamond).",
+    "technical_details_fr": "Le carbone possède deux isotopes stables (¹²C et ¹³C) et un isotope radioactif (¹⁴C) qui est utilisé pour dater des objets anciens (datation au carbone 14).",
+    "technical_details_en": "Carbon has two stable isotopes (¹²C and ¹³C) and one radioactive isotope (¹⁴C) that is used to date ancient objects (carbon-14 dating)."
+  },
+  {
+    "number": 8,
+    "symbol": "O",
+    "name_fr": "Oxygène",
+    "name_en": "Oxygen",
+    "category": "nonmetal",
+    "atomic_mass": 15.999,
+    "description_fr": "L'oxygène est un élément essentiel à la vie, utilisé dans la respiration cellulaire par de nombreux organismes. Il constitue environ 21% de l'atmosphère terrestre.",
+    "description_en": "Oxygen is an essential element for life, used in cellular respiration by many organisms. It makes up about 21% of Earth's atmosphere.",
+    "discovery_year": 1774,
+    "discoverer": "Joseph Priestley",
+    "electron_configuration": "1s² 2s² 2p⁴",
+    "electronegativity": 3.44,
+    "state_at_stp": "gas",
+    "melting_point": 54.36,
+    "boiling_point": 90.19,
+    "density": 0.001429,
+    "uses_fr": [
+      "Respiration médicale",
+      "Soudure et découpe de métaux",
+      "Production d'acier"
+    ],
+    "uses_en": [
+      "Medical respiration",
+      "Welding and metal cutting",
+      "Steel production"
+    ],
+    "fun_fact_fr": "Sans oxygène, le fer ne rouillerait pas et les feux ne pourraient pas brûler.",
+    "fun_fact_en": "Without oxygen, iron would not rust and fires could not burn.",
+    "technical_details_fr": "L'oxygène existe principalement sous forme de molécule diatomique (O₂) dans l'atmosphère, mais peut aussi exister sous forme d'ozone (O₃) dans la stratosphère, où il nous protège des rayons UV.",
+    "technical_details_en": "Oxygen mainly exists as a diatomic molecule (O₂) in the atmosphere, but can also exist as ozone (O₃) in the stratosphere, where it protects us from UV rays."
+  },
+  {
+    "number": 11,
+    "symbol": "Na",
+    "name_fr": "Sodium",
+    "name_en": "Sodium",
+    "category": "alkali-metal",
+    "atomic_mass": 22.99,
+    "description_fr": "Le sodium est un métal alcalin mou et argenté, très réactif. Il n'existe pas à l'état libre dans la nature en raison de sa grande réactivité.",
+    "description_en": "Sodium is a soft, silvery alkali metal, highly reactive. It does not exist free in nature due to its high reactivity.",
+    "discovery_year": 1807,
+    "discoverer": "Humphry Davy",
+    "electron_configuration": "1s² 2s² 2p⁶ 3s¹",
+    "electronegativity": 0.93,
+    "state_at_stp": "solid",
+    "melting_point": 370.87,
+    "boiling_point": 1156,
+    "density": 0.968,
+    "uses_fr": [
+      "Sel de table (chlorure de sodium)",
+      "Éclairage public (lampes à vapeur de sodium)",
+      "Production de soude caustique"
+    ],
+    "uses_en": [
+      "Table salt (sodium chloride)",
+      "Street lighting (sodium vapor lamps)",
+      "Production of caustic soda"
+    ],
+    "fun_fact_fr": "Le sodium pur réagit violemment avec l'eau, produisant suffisamment de chaleur pour enflammer l'hydrogène libéré.",
+    "fun_fact_en": "Pure sodium reacts violently with water, producing enough heat to ignite the released hydrogen.",
+    "technical_details_fr": "Le sodium est un élément essentiel à la vie, jouant un rôle crucial dans le potentiel électrique des cellules et la transmission des signaux nerveux.",
+    "technical_details_en": "Sodium is an essential element for life, playing a crucial role in the electrical potential of cells and the transmission of nerve signals."
+  },
+  {
+    "number": 17,
+    "symbol": "Cl",
+    "name_fr": "Chlore",
+    "name_en": "Chlorine",
+    "category": "halogen",
+    "atomic_mass": 35.45,
+    "description_fr": "Le chlore est un gaz jaune-verdâtre hautement réactif, appartenant à la famille des halogènes. Il est couramment utilisé comme désinfectant.",
+    "description_en": "Chlorine is a highly reactive yellow-green gas, belonging to the halogen family. It is commonly used as a disinfectant.",
+    "discovery_year": 1774,
+    "discoverer": "Carl Wilhelm Scheele",
+    "electron_configuration": "1s² 2s² 2p⁶ 3s² 3p⁵",
+    "electronegativity": 3.16,
+    "state_at_stp": "gas",
+    "melting_point": 171.6,
+    "boiling_point": 239.11,
+    "density": 0.003214,
+    "uses_fr": [
+      "Traitement de l'eau potable",
+      "Production de PVC",
+      "Fabrication d'eau de Javel"
+    ],
+    "uses_en": [
+      "Drinking water treatment",
+      "PVC production",
+      "Bleach manufacturing"
+    ],
+    "fun_fact_fr": "Le chlore a malheureusement été le premier gaz toxique utilisé comme arme chimique pendant la Première Guerre mondiale.",
+    "fun_fact_en": "Chlorine was unfortunately the first toxic gas used as a chemical weapon during World War I.",
+    "technical_details_fr": "Le chlore existe principalement sous forme de deux isotopes stables : ³⁵Cl (75,77%) et ³⁷Cl (24,23%), ce qui explique sa masse atomique fractionnaire.",
+    "technical_details_en": "Chlorine exists mainly as two stable isotopes: ³⁵Cl (75.77%) and ³⁷Cl (24.23%), which explains its fractional atomic mass."
+  },
+  {
+    "number": 79,
+    "symbol": "Au",
+    "name_fr": "Or",
+    "name_en": "Gold",
+    "category": "transition-metal",
+    "atomic_mass": 196.97,
+    "description_fr": "L'or est un métal de transition précieux, apprécié pour sa couleur jaune brillante, sa malléabilité et sa résistance à la corrosion.",
+    "description_en": "Gold is a precious transition metal, valued for its bright yellow color, malleability, and resistance to corrosion.",
+    "discovery_year": -4000,
+    "discoverer": "Civilisations anciennes",
+    "electron_configuration": "1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4s² 4p⁶ 4d¹⁰ 5s² 5p⁶ 4f¹⁴ 5d¹⁰ 6s¹",
+    "electronegativity": 2.54,
+    "state_at_stp": "solid",
+    "melting_point": 1337.33,
+    "boiling_point": 3243,
+    "density": 19.3,
+    "uses_fr": [
+      "Joaillerie et bijouterie",
+      "Réserves monétaires",
+      "Électronique de haute performance"
+    ],
+    "uses_en": [
+      "Jewelry and goldsmithing",
+      "Monetary reserves",
+      "High-performance electronics"
+    ],
+    "fun_fact_fr": "Tout l'or extrait dans l'histoire de l'humanité pourrait tenir dans un cube d'environ 21 mètres de côté.",
+    "fun_fact_en": "All the gold ever mined in human history could fit into a cube about 21 meters on each side.",
+    "technical_details_fr": "L'or est l'un des métaux les plus ductiles et malléables ; un gramme peut être étiré en un fil de 2 kilomètres ou battu en une feuille de 1 mètre carré.",
+    "technical_details_en": "Gold is one of the most ductile and malleable metals; one gram can be drawn into a wire 2 kilometers long or hammered into a sheet of 1 square meter."
+  }
+] 
