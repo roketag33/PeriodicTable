@@ -65,21 +65,21 @@
 
   // Fonction pour déterminer la catégorie CSS à partir de la catégorie de l'élément
   const getCategoryClass = (category: string | undefined): string => {
-    if (!category) return 'bg-gray-400';
+    if (!category) return 'category-unknown';
 
-    // Mapping des catégories des données vers les classes CSS
-    if (category.includes('alkali metal')) return 'bg-alkali-metal';
-    if (category.includes('alkaline earth metal')) return 'bg-alkaline-earth';
-    if (category.includes('transition metal')) return 'bg-transition-metal';
-    if (category === 'metal' || category.includes('post-transition metal')) return 'bg-metal';
-    if (category === 'metalloid') return 'bg-metalloid';
-    if (category === 'nonmetal' || category.includes('diatomic nonmetal')) return 'bg-nonmetal';
-    if (category === 'halogen') return 'bg-halogen';
-    if (category === 'noble gas') return 'bg-noble-gas';
-    if (category === 'lanthanide') return 'bg-lanthanide';
-    if (category === 'actinide') return 'bg-actinide';
+    // Mapping des catégories des données vers les nouvelles classes CSS neon
+    if (category.includes('alkali metal')) return 'category-alkali-metal';
+    if (category.includes('alkaline earth metal')) return 'category-alkaline-earth';
+    if (category.includes('transition metal')) return 'category-transition-metal';
+    if (category === 'metal' || category.includes('post-transition metal')) return 'category-post-transition-metal';
+    if (category === 'metalloid') return 'category-metalloid';
+    if (category === 'nonmetal' || category.includes('diatomic nonmetal')) return 'category-nonmetal';
+    if (category === 'halogen') return 'category-halogen';
+    if (category === 'noble gas') return 'category-noble-gas';
+    if (category === 'lanthanide') return 'category-lanthanide';
+    if (category === 'actinide') return 'category-actinide';
     
-    return 'bg-gray-400'; // Couleur par défaut
+    return 'category-unknown'; // Couleur par défaut
   };
 
   // Déterminer la classe CSS pour l'élément actuel
@@ -107,29 +107,40 @@
 
 <style>
   .element-card {
-    @apply w-full h-full rounded-md relative flex flex-col items-center justify-center p-1;
+    @apply w-full h-full rounded-lg relative flex flex-col items-center justify-center p-1;
     min-height: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+  }
+
+  .element-card:hover {
+    transform: scale(1.15);
+    z-index: 20;
+    box-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
+    border-color: currentColor;
   }
   
   .element-number {
-    @apply text-xs absolute top-1 left-1 opacity-75;
+    @apply text-[8px] md:text-xs absolute top-0.5 left-1 opacity-70 font-mono;
   }
   
   .element-symbol {
-    @apply text-lg md:text-2xl font-bold;
+    @apply text-sm md:text-xl font-bold;
+    text-shadow: 0 0 8px currentColor;
   }
   
   .element-name {
-    @apply text-xs max-w-full;
+    @apply text-[6px] md:text-xs max-w-full opacity-70;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    font-size: min(0.6rem, 1.5vw);
   }
   
   .element-state {
-    @apply absolute top-1 right-1;
-    font-size: min(0.6rem, 1.5vw);
+    @apply absolute top-0.5 right-1;
+    font-size: min(0.5rem, 1.2vw);
   }
   
   @media (max-width: 1024px) {
@@ -138,7 +149,7 @@
     }
     
     .element-symbol {
-      @apply text-sm;
+      @apply text-xs;
     }
   }
 </style> 

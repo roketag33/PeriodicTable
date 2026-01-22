@@ -14,18 +14,23 @@
   // Chargement des données au démarrage
   onMount(async () => {
     await loadElements();
-    // Initialiser avec le filtre "tous les éléments" par défaut
     addFilter('all');
   });
 </script>
 
-<main class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-  <div class="container mx-auto px-4 py-8">
-    <header class="mb-6">
-      <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
-        <div>
-          <h1 class="text-3xl font-bold text-blue-600">{$t('app.title')}</h1>
-          <p class="text-lg text-gray-600 dark:text-gray-400">{$t('app.subtitle')}</p>
+<main class="min-h-screen text-white">
+  <div class="container mx-auto px-4 py-8 max-w-[1600px]">
+    <header class="mb-8">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
+        <div class="animate-float">
+          <div class="inline-flex items-center px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-400 text-sm font-medium mb-3">
+            <span class="mr-2">⚛️</span>
+            <span>Interactive Chemistry</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-purple-400">
+            {$t('app.title')}
+          </h1>
+          <p class="text-lg text-white/50 mt-2">{$t('app.subtitle')}</p>
         </div>
         
         <div class="flex items-center gap-4">
@@ -36,18 +41,19 @@
     </header>
     
     <div class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-      <FilterPanel className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow" />
-      <CategoryLegend className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow" />
+      <FilterPanel className="glass-panel p-4" />
+      <CategoryLegend className="glass-panel p-4" />
     </div>
     
-    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow">
+    <div class="glass-panel p-4 md:p-6">
       <PeriodicTable />
     </div>
     
-    <footer class="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
-      <p>© 2023 - Tableau Périodique Interactif</p>
+    <footer class="mt-8 text-center text-sm text-white/30">
+      <p>© 2024 - Tableau Périodique Interactif</p>
     </footer>
   </div>
   
   <ElementModal />
 </main>
+
