@@ -125,17 +125,7 @@
   {#if $selectedElement}
     <div
       bind:this={contentRef}
-      class="modal-content bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-      class:bg-alkali-metal={$selectedElement.category === 'alkali-metal'}
-      class:bg-alkaline-earth={$selectedElement.category === 'alkaline-earth'}
-      class:bg-transition-metal={$selectedElement.category === 'transition-metal'}
-      class:bg-metal={$selectedElement.category === 'metal'}
-      class:bg-metalloid={$selectedElement.category === 'metalloid'}
-      class:bg-nonmetal={$selectedElement.category === 'nonmetal'}
-      class:bg-halogen={$selectedElement.category === 'halogen'}
-      class:bg-noble-gas={$selectedElement.category === 'noble-gas'}
-      class:bg-lanthanide={$selectedElement.category === 'lanthanide'}
-      class:bg-actinide={$selectedElement.category === 'actinide'}
+      class="modal-content bg-gray-900/95 backdrop-blur-xl border border-white/10 text-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
       on:click|stopPropagation={() => {}}
       on:keydown|stopPropagation={handleContentKeydown}
       role="document"
@@ -155,7 +145,7 @@
           </div>
           
           <button
-            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+            class="text-white/60 hover:text-white transition-colors duration-200"
             on:click={closeModal}
             aria-label={$t('element.close')}
           >
@@ -175,7 +165,7 @@
               {$t('element.fun_fact')}
               <span class="ml-2 text-xl" aria-hidden="true">😲</span>
             </h3>
-            <p class="mb-4 italic bg-gray-100 dark:bg-gray-700 p-3 rounded-md">
+            <p class="mb-4 italic bg-white/10 p-3 rounded-lg text-white/90">
               {$currentLang === 'fr' ? $selectedElement.fun_fact_fr : $selectedElement.fun_fact_en}
             </p>
             
@@ -246,7 +236,7 @@
             {#if $selectedElement.technical_details_fr || $selectedElement.technical_details_en}
               <div class="mt-4">
                 <button
-                  class="text-blue-600 hover:text-blue-800 flex items-center gap-1 focus:outline-none transition-colors duration-200 font-medium"
+                  class="text-purple-400 hover:text-purple-300 flex items-center gap-1 focus:outline-none transition-colors duration-200 font-medium"
                   on:click={toggleDetails}
                   aria-expanded={isExpanded}
                 >
@@ -265,7 +255,7 @@
                 </button>
                 
                 <div class="technical-details overflow-hidden" style="height: 0; opacity: 0;">
-                  <div class="mt-2 p-3 bg-gray-100 dark:bg-gray-700 rounded">
+                  <div class="mt-2 p-3 bg-white/10 rounded-lg text-white/90">
                     <p>
                       {$currentLang === 'fr' 
                         ? $selectedElement.technical_details_fr 
